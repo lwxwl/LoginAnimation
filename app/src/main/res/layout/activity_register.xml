@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:paddingTop="70dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_add"
+            app:cardBackgroundColor="#2ea67f"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="@string/register"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="50dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="30dp">
+                    <android.support.design.widget.TextInputLayout
+                        android:theme="@style/TextLabel"
+                        android:textColorHint="#f0f7f4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edt_username"
+                            android:hint="@string/username"
+                            android:textSize="13sp"
+                            android:textColor="#f0f7f4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="2dp"
+                            android:inputType="textPersonName"
+                            android:background="@drawable/bg_edit_2"
+                            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="30dp"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:theme="@style/TextLabel"
+                        android:textColorHint="#f0f7f4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edt_password"
+                            android:hint="@string/password"
+                            android:textSize="13sp"
+                            android:textColor="#f0f7f4"
+                            android:background="@drawable/bg_edit_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="2dp"
+                            android:inputType="textPassword"
+                            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingStart="50dp"
+                    android:paddingEnd="30dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <android.support.design.widget.TextInputLayout
+                        android:theme="@style/TextLabel"
+                        android:textColorHint="#f0f7f4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:id="@+id/edt_repeatpassword"
+                            android:hint="@string/repeat_password"
+                            android:textSize="13sp"
+                            android:textColor="#f0f7f4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="2dp"
+                            android:background="@drawable/bg_edit_2"
+                            android:inputType="textPassword"
+                            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_go"
+                    android:text="@string/next"
+                    android:textColor="#2fa881"
+                    android:background="@drawable/btn_shape_2"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:stateListAnimator="@drawable/state_animator"
+                    >
+                </Button>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            app:fabSize="normal"
+            android:src="@drawable/ic_close_white_24dp"
+            android:transitionName="loginFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top" />
+    </FrameLayout>
+
+
+</RelativeLayout>
